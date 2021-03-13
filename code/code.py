@@ -13,7 +13,7 @@ kivy.require("1.9.1")
 # base Class of your App inherits from the App class. 
 # app:always refers to the instance of your application 
 from kivy.app import App
-f = open('slovar.txt', 'r')
+f = open('slovar.txt', 'r', encoding="utf-8")
 word = str(f.read())
 word = word.split()
 f.close()
